@@ -1,0 +1,29 @@
+{
+    "name": "chernkiat/moralis-laravel",
+    "description": "Laravel wrapper package for the moralis.io API",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Chern Kiat",
+            "email": "Kid1450@live.com"
+        }
+    ],
+    "require": {
+        "guzzlehttp/guzzle": "^6.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "ChernKiat\\Moralis\\": "src/"
+        },
+        "files": [
+            "src/Helpers/moralis.php"
+        ]
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "ChernKiat\\Moralis\\MoralisServiceProvider"
+            ]
+        }
+    }
+}
