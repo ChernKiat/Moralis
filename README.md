@@ -12,9 +12,9 @@ MORALIS_API_KEY={your-api-key}
 
 ## Usage
 
-## To send a single event in your application, use `moralis()->event(name, value, dimension)`. Name is a required string, value a required float, and dimension is an optional string that defaults to null.
+## To send a single file to your Moralis server, use `moralis('storage')->uploadFile(filename, content)`.
 
-## You can also send batch events with `moralis()->batch(items)`. See the [documentation on batching](https://app.quickmetrics.io/docs/send-events/batching) for more details about how your items array should be formatted.
+## You can also send batch files with `moralis('storage')->uploadFiles(files)`. See the [documentation on batching](https://docs.moralis.io/moralis-dapp/web3-sdk/ipfs-storage-new) for more details about how your files array should be formatted.
 
 ## More Info
 
